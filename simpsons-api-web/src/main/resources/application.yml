@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: simpsons-corp
+
+server:
+  port: 8083
+  servlet:
+    context-path: /${spring.application.name}/api
+
+logging:
+  file: application.log
