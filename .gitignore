@@ -1,0 +1,26 @@
+# Maven exclusions.
+**/target
+
+# Eclipse exclusions.
+.settings
+**/.settings
+
+.springBeans
+**/.springBeans
+
+.classpath
+**/.classpath
+
+.project
+**/.project
+
+# Intellij
+.idea
+**/.idea
+
+*.iml
+**/.iml
+
+*.iws
+**/.iws
+
