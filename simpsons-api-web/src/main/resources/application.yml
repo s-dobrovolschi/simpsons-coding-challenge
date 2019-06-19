@@ -1,6 +1,9 @@
 spring:
   application:
     name: simpsons-corp
+  data:
+    mongodb:
+      database: simpsonsdb
 
 server:
   port: 8083
