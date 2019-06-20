@@ -4,7 +4,6 @@ import com.simpsons.corp.api.model.Character;
 import com.simpsons.corp.api.service.CharacterService;
 import com.simpsons.corp.api.service.repositories.CharacterRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,5 +23,11 @@ public class CharacterServiceImpl implements CharacterService {
     public List<Character> findAllCharacters() {
 
         return characterRepository.findAll();
+    }
+
+    @Override
+    public Optional<Character> findById(String id) {
+
+        return characterRepository.findById(id);
     }
 }

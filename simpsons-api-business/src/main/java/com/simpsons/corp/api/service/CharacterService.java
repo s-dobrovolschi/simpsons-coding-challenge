@@ -8,4 +8,6 @@ import java.util.Optional;
 public interface CharacterService {
 
     List<Character> findAllCharacters();
+
+    Optional<Character> findById(String id);
 }
