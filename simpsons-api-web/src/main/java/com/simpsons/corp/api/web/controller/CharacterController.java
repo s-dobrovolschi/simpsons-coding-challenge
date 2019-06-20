@@ -3,11 +3,9 @@ package com.simpsons.corp.api.web.controller;
 import com.simpsons.corp.api.model.Character;
 import com.simpsons.corp.api.model.CharacterDto;
 import com.simpsons.corp.api.service.CharacterService;
-import com.simpsons.corp.api.web.exception.ResourceNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
