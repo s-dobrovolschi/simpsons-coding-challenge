@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ConfigService } from './config/config.service';
+import { TwittsService } from './service/twitts.service';
+import { CharacterService } from './service/character.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ConfigService } from './config/config.service';
     HttpClientModule
   ],
   providers: [
-    ConfigService
+    ConfigService,
+    CharacterService,
+    TwittsService
   ],
   bootstrap: [AppComponent]
 })
